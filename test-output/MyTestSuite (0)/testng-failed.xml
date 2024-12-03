@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="classes" name="Failed suite [MyTestSuite (0)]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="DemoWebShop.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="10" parallel="classes" name="chrome_test(failed)">
+    <parameter name="BrowserType" value="chrome"/>
+    <classes>
+      <class name="DemoWebShop.DynamicTestRunners.Cross_Browser_Parallel_Property_Runner_01_3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.DynamicTestRunners.Cross_Browser_Parallel_Property_Runner_01_3 -->
+      <class name="DemoWebShop.DynamicTestRunners.Cross_Browser_Parallel_Property_Runner_01_4">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.DynamicTestRunners.Cross_Browser_Parallel_Property_Runner_01_4 -->
+    </classes>
+  </test> <!-- chrome_test(failed) -->
+  <test thread-count="10" parallel="classes" name="firefox_test(failed)">
+    <parameter name="BrowserType" value="firefox"/>
+    <classes>
+      <class name="DemoWebShop.DynamicTestRunners.Cross_Browser_Parallel_Property_Runner_01_3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.DynamicTestRunners.Cross_Browser_Parallel_Property_Runner_01_3 -->
+    </classes>
+  </test> <!-- firefox_test(failed) -->
+  <test thread-count="10" parallel="classes" name="edge_test(failed)">
+    <parameter name="BrowserType" value="edge"/>
+    <classes>
+      <class name="DemoWebShop.DynamicTestRunners.Cross_Browser_Parallel_Property_Runner_01_3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.DynamicTestRunners.Cross_Browser_Parallel_Property_Runner_01_3 -->
+    </classes>
+  </test> <!-- edge_test(failed) -->
+</suite> <!-- Failed suite [MyTestSuite (0)] -->

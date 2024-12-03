@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" data-provider-thread-count="3" name="Failed suite [My test suit]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="DemoWebShop.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="RegressionTest02(failed)">
+    <parameter name="BrowserType" value="edge"/>
+    <classes>
+      <class name="DemoWebShop.TestRunners.Property_Runner2">
+        <methods>
+          <include name="afterClass"/>
+          <include name="runScenario" invocation-numbers="1 2"/>
+          <include name="tearDownClass"/>
+          <include name="beforeClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.TestRunners.Property_Runner2 -->
+    </classes>
+  </test> <!-- RegressionTest02(failed) -->
+  <test thread-count="5" parallel="tests" name="RegressionTest01(failed)">
+    <parameter name="BrowserType" value="firefox"/>
+    <classes>
+      <class name="DemoWebShop.TestRunners.Property_Runner1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="runScenario" invocation-numbers="1 2"/>
+          <include name="tearDownClass"/>
+          <include name="afterClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.TestRunners.Property_Runner1 -->
+    </classes>
+  </test> <!-- RegressionTest01(failed) -->
+  <test thread-count="5" parallel="tests" name="RegressionTest03(failed)">
+    <parameter name="BrowserType" value="chrome"/>
+    <classes>
+      <class name="DemoWebShop.TestRunners.Property_Runner3">
+        <methods>
+          <include name="afterClass"/>
+          <include name="runScenario" invocation-numbers="2"/>
+          <include name="tearDownClass"/>
+          <include name="beforeClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.TestRunners.Property_Runner3 -->
+    </classes>
+  </test> <!-- RegressionTest03(failed) -->
+</suite> <!-- Failed suite [My test suit] -->

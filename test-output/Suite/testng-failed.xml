@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="ENV" value="TEST"/>
+  <listeners>
+    <listener class-name="Creative.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="LM API SMOKE TEST(failed)">
+    <classes>
+      <class name="Creative.TestRunners.TestRunnerTEST">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="beforeCalss"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 4"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Creative.TestRunners.TestRunnerTEST -->
+    </classes>
+  </test> <!-- LM API SMOKE TEST(failed) -->
+</suite> <!-- Failed suite [Suite] -->

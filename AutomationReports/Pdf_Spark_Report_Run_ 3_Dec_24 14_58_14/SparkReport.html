@@ -1,0 +1,1810 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Demo Web Shop</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Demo Web Shop - Automation Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 3, 2024 02:58:14 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 3, 2024 02:58:14 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 3, 2024 03:03:30 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='90%'><b>9</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='10%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='98%'><b>50</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Demo Webshop application":315.792
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Review</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>@DWS_10</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@DWS_07</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DWS_05</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>94.444%</td>
+</tr>
+<tr>
+<td>@DWS_02</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Profile</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Purchase</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DWS_08</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DWS_09</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DWS_01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DWS_04</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DWS_03</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DWS_06</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>user</td>
+<td>surya</td>
+</tr>
+<tr>
+<td>os</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 9,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 50,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Review</a><a class="dropdown-item" href="#">@DWS_10</a><a class="dropdown-item" href="#">@DWS_07</a><a class="dropdown-item" href="#">@DWS_05</a><a class="dropdown-item" href="#">@test</a><a class="dropdown-item" href="#">@DWS_02</a><a class="dropdown-item" href="#">@Profile</a><a class="dropdown-item" href="#">@Purchase</a><a class="dropdown-item" href="#">@DWS_08</a><a class="dropdown-item" href="#">@DWS_09</a><a class="dropdown-item" href="#">@DWS_01</a><a class="dropdown-item" href="#">@DWS_04</a><a class="dropdown-item" href="#">@DWS_03</a><a class="dropdown-item" href="#">@DWS_06</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Demo Webshop application</p>
+            <p class="text-sm">
+              <span>2:58:14 pm</span> / <span>00:05:15:792</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Demo Webshop application</h5>
+<span class='badge badge-success'>12.03.2024 2:58:14 pm</span>
+<span class='badge badge-danger'>12.03.2024 3:03:30 pm</span>
+<span class='badge badge-default'>00:05:15:792</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>DWS_01 Validate community pool</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.DWS_01_Validate_community_pool.i_open_the_demo_web_shop_application()">
+                <span>Given I open the Demo Web Shop application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.DWS_01_Validate_community_pool.i_validate_the_community_pool()">
+                <span>Then I validate the community pool</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.CommonSteps.i_close_the_browser()">
+                <span>And I close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>DWS_02 Order text book</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>DWS_02 Order text book</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I navigate to Books page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select book and add to cart "DWS_02_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I order the book "DWS_02_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>DWS_03 Order Computer</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>DWS_03 Order Computer</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I navigate to Computers page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select Computer and add to cart "DWS_03_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I order the Computer "DWS_03_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>DWS_04 Validate customer details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>DWS_04 Validate customer details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I navigate to My account page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I validate the Customer information "DWS_02_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>DWS_05 Search Computing and internet</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>DWS_05 Search Computing and internet</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I search and validate Computing and internet "DWS_05_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>DWS_06 Validate email message</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>DWS_06 Validate email message</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I navigate to Jewelry page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select Jewel and add to wish list with testdata "DWS_06_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I navigate to Wishlist page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I validate Jewel in wish list with testdata "DWS_06_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I send mail to friend Email about product with testdata "DWS_06_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>DWS_07 Perform a Product Review</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>DWS_07 Perform a Product Review</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I search a product with testData "DWS_07_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on Add review and write and submit review with testdata "DWS_07_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I validate submitted review with testdata "DWS_07_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>DWS_08 View and Edit User Profile</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>DWS_08 View and Edit User Profile</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I navigate to My account page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I Edit the User Profile in my account page With testData "DWS_08_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I Validate the User Profile changes are saved successfully With testData "DWS_08_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="115"><span class="badge log pass-bg mr-2">Pass</span>DWS_09 Remove Product from Cart</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>DWS_09 Remove Product from Cart</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I navigate to Books page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I select the Multiple Products With testData "DWS_09_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I Remove any one of the product in shopping cart page With testData "DWS_09_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I verify the Product Is removed in shopping cart page With testData "DWS_09_01"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="132"><span class="badge log fail-bg mr-2">Fail</span>DWS_10 Sort Products by Price</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.CommonSteps.i_login_to_demo_web_shop_application_with_valid_credentials()">
+                <span>Given I login to Demo Web Shop application with valid credentials</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.CommonSteps.i_navigate_to_jewelry_page()">
+                <span>Then I navigate to Jewelry page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.DWS_10_Sort_Products_by_Price.i_select_the_sorting_option_price_low_to_high()">
+                <span>Then I Select the Sorting Option Price Low to High</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.DWS_10_Sort_Products_by_Price.i_select_the_sorting_option_price_high_to_low()">
+                <span>Then I Select the Sorting Option Price High to Low</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.DWS_10_Sort_Products_by_Price.i_select_the_sorting_option_name_a_to_z()">
+                <span>Then I Select the Sorting Option Name A to Z</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.DWS_10_Sort_Products_by_Price.i_select_the_sorting_option_name_z_to_a()">
+                <span>Then I Select the Sorting Option Name Z to A</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="ui.creative.stepdefinitions.CommonSteps.i_close_the_browser()">
+                <span>And I close the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>ui.creative.stepdefinitions.Hooks.teardown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [Products Price arranged SuccessFully to Low to High] but found [Products Price NOT arranged SuccessFully to Low to High],
+	expected [Products Price SuccessFully arranged to High to Low] but found [Products Price NOT SuccessFully arranged  to High to Low]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at ui.creative.stepdefinitions.Hooks.teardown(Hooks.java:61)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">14</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Review</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Review</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>DWS_06 Validate email message</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_06 Validate email message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='67'>DWS_06 Validate email message</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_06 Validate email message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='85'>DWS_07 Perform a Product Review</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_07 Perform a Product Review</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>DWS_07 Perform a Product Review</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_07 Perform a Product Review</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:02:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>DWS_10 Sort Products by Price</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_10 Sort Products by Price</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@DWS_10</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_10</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:02:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>DWS_10 Sort Products by Price</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_10 Sort Products by Price</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DWS_07</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_07</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='85'>DWS_07 Perform a Product Review</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_07 Perform a Product Review</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>DWS_07 Perform a Product Review</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_07 Perform a Product Review</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DWS_05</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_05</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>DWS_05 Search Computing and internet</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_05 Search Computing and internet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='56'>DWS_05 Search Computing and internet</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_05 Search Computing and internet</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>17</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@test</p>
+<p class="duration text-sm">18 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test</h4>
+<span status="pass" class='badge log pass-bg'>17 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>DWS_01 Validate community pool</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_01 Validate community pool</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>DWS_02 Order text book</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_02 Order text book</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>DWS_02 Order text book</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_02 Order text book</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>DWS_03 Order Computer</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_03 Order Computer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>DWS_03 Order Computer</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_03 Order Computer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>DWS_04 Validate customer details</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_04 Validate customer details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>DWS_04 Validate customer details</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_04 Validate customer details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>DWS_05 Search Computing and internet</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_05 Search Computing and internet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='56'>DWS_05 Search Computing and internet</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_05 Search Computing and internet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>DWS_06 Validate email message</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_06 Validate email message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='67'>DWS_06 Validate email message</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_06 Validate email message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='85'>DWS_07 Perform a Product Review</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_07 Perform a Product Review</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>DWS_07 Perform a Product Review</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_07 Perform a Product Review</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>DWS_08 View and Edit User Profile</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_08 View and Edit User Profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='101'>DWS_08 View and Edit User Profile</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_08 View and Edit User Profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='115'>DWS_09 Remove Product from Cart</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_09 Remove Product from Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>DWS_09 Remove Product from Cart</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_09 Remove Product from Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:02:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='132'>DWS_10 Sort Products by Price</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_10 Sort Products by Price</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DWS_02</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_02</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>DWS_02 Order text book</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_02 Order text book</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>DWS_02 Order text book</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_02 Order text book</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@Profile</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Profile</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>DWS_01 Validate community pool</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_01 Validate community pool</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>DWS_04 Validate customer details</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_04 Validate customer details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>DWS_04 Validate customer details</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_04 Validate customer details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>DWS_08 View and Edit User Profile</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_08 View and Edit User Profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='101'>DWS_08 View and Edit User Profile</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_08 View and Edit User Profile</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@Purchase</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Purchase</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>DWS_02 Order text book</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_02 Order text book</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>DWS_02 Order text book</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_02 Order text book</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>DWS_03 Order Computer</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_03 Order Computer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>DWS_03 Order Computer</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_03 Order Computer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>DWS_05 Search Computing and internet</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_05 Search Computing and internet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='56'>DWS_05 Search Computing and internet</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_05 Search Computing and internet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='115'>DWS_09 Remove Product from Cart</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_09 Remove Product from Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>DWS_09 Remove Product from Cart</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_09 Remove Product from Cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DWS_08</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_08</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>DWS_08 View and Edit User Profile</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_08 View and Edit User Profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='101'>DWS_08 View and Edit User Profile</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_08 View and Edit User Profile</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DWS_09</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_09</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='115'>DWS_09 Remove Product from Cart</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_09 Remove Product from Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='116'>DWS_09 Remove Product from Cart</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_09 Remove Product from Cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@DWS_01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>DWS_01 Validate community pool</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_01 Validate community pool</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DWS_04</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_04</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='42'>DWS_04 Validate customer details</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_04 Validate customer details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>DWS_04 Validate customer details</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_04 Validate customer details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DWS_03</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_03</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>DWS_03 Order Computer</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_03 Order Computer</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>DWS_03 Order Computer</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_03 Order Computer</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DWS_06</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DWS_06</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>DWS_06 Validate email message</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_06 Validate email message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='67'>DWS_06 Validate email message</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_06 Validate email message</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='149'>ui.creative.stepdefinitions.Hooks.teardown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Demo Webshop application.DWS_10 Sort Products by Price.ui.creative.stepdefinitions.Hooks.teardown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

@@ -1,0 +1,5167 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 16, 2023 03:21:57 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Create</a><a class="dropdown-item" href="#">Delete</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="Create"
+          device="">
+          <div class="test-detail">
+            <p class="name">Create and Update DepartmentService</p>
+            <p class="text-sm">
+              <span>3:21:58 pm</span> / <span>00:00:17:572</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create and Update DepartmentService</h5>
+<span class='badge badge-success'>08.16.2023 3:21:58 pm</span>
+<span class='badge badge-danger'>08.16.2023 3:22:15 pm</span>
+<span class='badge badge-default'>00:00:17:572</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Create</span></div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:04:596</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>I hit DepartmentService POST with name as Stephen</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:02 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({
+  "departmentName": "Admin",
+  "createdBy": 1,
+  "createdOn": "2023-02-15T13:16:32.500Z",
+  "employee": [
+    {
+      "employeeName": "Stephen",
+      "gender": "Male",
+      "city": "Mumbai",
+      "designation": "TeamMember",
+      "createdBy": 1,
+      "createdOn": "2023-02-15T13:16:32.500Z"
+    }
+  ]
+}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="3"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:02 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:02 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:618</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="4"><span>I validate the response for DepartmentService POST</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:02 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "id": 24,
+    "departmentName": "Admin",
+    "createdBy": 1,
+    "createdOn": "2023-02-15T13:16:32.5Z",
+    "employee": [
+        {
+            "id": 39,
+            "employeeName": "Stephen",
+            "gender": "Male",
+            "city": "Mumbai",
+            "designation": "TeamMember",
+            "createdBy": 1,
+            "createdOn": "2023-02-15T13:16:32.5Z",
+            "departmentId": 24,
+            "department": null
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+          <b>Expected Department Name : </b><font color=green>Admin</font>	<b>Actual Department Name : </b><font color=green>Admin</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+          <b>Expected Employee Name : </b><font color=green>Stephen</font>	<b>Actual Employee Name : </b><font color=green>Stephen</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:340</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="5"><span>I hit DepartmentService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit DepartmentService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit DepartmentService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="6"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:037</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="7"><span>I validate the response for DepartmentService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create([
+    {
+        "employee": null,
+        "id": 3,
+        "departmentName": "Purchase",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 4,
+        "departmentName": "Procurement",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 5,
+        "departmentName": "IT",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 7,
+        "departmentName": "Admin Department",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 9,
+        "departmentName": "AAA Department",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 11,
+        "departmentName": "QADept",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 12,
+        "departmentName": "SSSDepartment",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 24,
+        "departmentName": "Admin",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+          Department name 'Admin' Present in GetAll response
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+          Department id '24' Present in GetAll response
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:03 pm</td>
+        <td>
+          Employee name 'Stephen' Present in GetAll response
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:304</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="8"><span>I hit DepartmentService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:04 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit DepartmentService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit DepartmentService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="9"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:04 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:04 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:049</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="10"><span>I validate the response for DepartmentService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:04 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create([
+    {
+        "employee": null,
+        "id": 24,
+        "departmentName": "Admin",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:04 pm</td>
+        <td>
+          <b>Expected Department name : </b><font color=green>[Admin]</font>	<b>Actual Department name : </b><font color=green>[Admin]</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:04 pm</td>
+        <td>
+          <b>Expected Department id : </b><font color=green>[24]</font>	<b>Actual Department id : </b><font color=green>[24]</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:10:840</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="11"><span>I hit DepartmentService PUT</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({
+"id":24,
+  "departmentName": "Purchase",
+  "createdBy": 1,
+  "createdOn": "2023-02-15T13:16:32.500Z",
+  "employee": [
+    {
+      "employeeName": "Stephen_updated",
+      "gender": "Male",
+      "city": "Mumbai",
+      "designation": "TeamMember",
+      "createdBy": 1,
+      "createdOn": "2023-02-15T13:16:32.500Z"
+    }
+  ]
+}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="12"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:14 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:14 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:040</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="13"><span>I validate the response for DepartmentService PUT</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:14 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "id": 24,
+    "departmentName": "Purchase",
+    "createdBy": 1,
+    "createdOn": "2023-02-15T13:16:32.5Z",
+    "employee": [
+        {
+            "id": 40,
+            "employeeName": "Stephen_updated",
+            "gender": "Male",
+            "city": "Mumbai",
+            "designation": "TeamMember",
+            "createdBy": 1,
+            "createdOn": "2023-02-15T13:16:32.5Z",
+            "departmentId": 24,
+            "department": null
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:14 pm</td>
+        <td>
+          <b>Expected Department name : </b><font color=green>Purchase</font>	<b>Actual Department name : </b><font color=green>Purchase</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:14 pm</td>
+        <td>
+          <b>Expected Employee name : </b><font color=green>Stephen_updated</font>	<b>Actual Employee name : </b><font color=green>Stephen_updated</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:303</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="14"><span>I hit DepartmentService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit DepartmentService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit DepartmentService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="15"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:032</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="16"><span>I validate the response for DepartmentService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create([
+    {
+        "employee": null,
+        "id": 3,
+        "departmentName": "Purchase",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 4,
+        "departmentName": "Procurement",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 5,
+        "departmentName": "IT",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 7,
+        "departmentName": "Admin Department",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 9,
+        "departmentName": "AAA Department",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 11,
+        "departmentName": "QADept",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 12,
+        "departmentName": "SSSDepartment",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 24,
+        "departmentName": "Purchase",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          Department name 'Purchase' Present in GetAll response
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          Department id '24' Present in GetAll response
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          Employee name 'Stephen_updated' Present in GetAll response
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:300</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="17"><span>I hit DepartmentService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit DepartmentService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit DepartmentService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="18"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:040</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="19"><span>I validate the response for DepartmentService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create([
+    {
+        "employee": null,
+        "id": 24,
+        "departmentName": "Purchase",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          <b>Expected Department name : </b><font color=green>[Purchase]</font>	<b>Actual Department name : </b><font color=green>[Purchase]</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:15 pm</td>
+        <td>
+          <b>Expected Department id : </b><font color=green>[24]</font>	<b>Actual Department id : </b><font color=green>[24]</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag="Create"
+          device="">
+          <div class="test-detail">
+            <p class="name">Create and Update EmployeeService</p>
+            <p class="text-sm">
+              <span>3:22:15 pm</span> / <span>00:00:03:132</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create and Update EmployeeService</h5>
+<span class='badge badge-success'>08.16.2023 3:22:15 pm</span>
+<span class='badge badge-danger'>08.16.2023 3:22:19 pm</span>
+<span class='badge badge-default'>00:00:03:132</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Create</span></div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:847</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="21"><span>I hit EmployeeService POST with name as TestEmployeeService007</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:16 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({
+  "employeeName": "TestEmployeeService007",
+  "gender": "Male",
+  "city": "Mumbai",
+  "designation": "TL",
+  "createdBy": 1,
+  "createdOn": "2023-02-16T07:32:20.520Z",
+  "departmentId": 24
+}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="22"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:16 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:16 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:020</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="23"><span>I validate the response for EmployeeService POST </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:16 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+    "id": 41,
+    "employeeName": "TestEmployeeService007",
+    "gender": "Male",
+    "city": "Mumbai",
+    "designation": "TL",
+    "createdBy": 1,
+    "createdOn": "2023-02-16T07:32:20.52Z",
+    "departmentId": 24,
+    "department": null
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:16 pm</td>
+        <td>
+          <b>Expected employeeName : </b><font color=green>TestEmployeeService007</font>	<b>Actual employeeName : </b><font color=green>TestEmployeeService007</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:299</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="24"><span>I hit EmployeeService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit EmployeeService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit EmployeeService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="25"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:038</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="26"><span>I validate the response for EmployeeService GetALL </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create([
+    {
+        "department": null,
+        "id": 3,
+        "employeeName": "Stephen",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "Bombay",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00",
+        "departmentId": 4
+    },
+    {
+        "department": null,
+        "id": 39,
+        "employeeName": "Stephen",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TeamMember",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00",
+        "departmentId": 24
+    },
+    {
+        "department": null,
+        "id": 40,
+        "employeeName": "Stephen_updated",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TeamMember",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00",
+        "departmentId": 24
+    },
+    {
+        "department": null,
+        "id": 41,
+        "employeeName": "TestEmployeeService007",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TL",
+        "createdBy": 1,
+        "createdOn": "2023-02-16T00:00:00",
+        "departmentId": 24
+    }
+]); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          'TestEmployeeService007' Present in GetAll response
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          Employee id '41' Present in GetAll response
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:296</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="27"><span>I hit EmployeeService GetID </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit EmployeeService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit EmployeeService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="28"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:029</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="29"><span>I validate the response for EmployeeService GetID </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create([
+    {
+        "department": null,
+        "id": 41,
+        "employeeName": "TestEmployeeService007",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TL",
+        "createdBy": 1,
+        "createdOn": "2023-02-16T00:00:00",
+        "departmentId": 24
+    }
+]); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          <b>Expected employeeName : </b><font color=green>[TestEmployeeService007]</font>	<b>Actual employeeName : </b><font color=green>[TestEmployeeService007]</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:17 pm</td>
+        <td>
+          <b>Expected Employee id : </b><font color=green>[41]</font>	<b>Actual Employee id : </b><font color=green>[41]</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:848</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="30"><span>I hit EmployeeService PUT</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({
+  "id": 41,
+  "employeeName": "TestEmployeeService007_updated",
+  "gender": "Male",
+  "city": "Mumbai",
+  "designation": "TL",
+  "createdBy": 1,
+  "createdOn": "2023-02-16T07:32:20.520Z",
+  "departmentId": 24
+}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="31"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:021</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="32"><span>I validate the response for EmployeeService PUT </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({
+    "id": 41,
+    "employeeName": "TestEmployeeService007_updated",
+    "gender": "Male",
+    "city": "Mumbai",
+    "designation": "TL",
+    "createdBy": 1,
+    "createdOn": "2023-02-16T07:32:20.52Z",
+    "departmentId": 24,
+    "department": null
+}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+          <b>Expected employeeName : </b><font color=green>TestEmployeeService007_updated</font>	<b>Actual employeeName : </b><font color=green>TestEmployeeService007_updated</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:306</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="33"><span>I hit EmployeeService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit EmployeeService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit EmployeeService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="34"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:045</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="35"><span>I validate the response for EmployeeService GetALL </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create([
+    {
+        "department": null,
+        "id": 3,
+        "employeeName": "Stephen",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "Bombay",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00",
+        "departmentId": 4
+    },
+    {
+        "department": null,
+        "id": 39,
+        "employeeName": "Stephen",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TeamMember",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00",
+        "departmentId": 24
+    },
+    {
+        "department": null,
+        "id": 40,
+        "employeeName": "Stephen_updated",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TeamMember",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00",
+        "departmentId": 24
+    },
+    {
+        "department": null,
+        "id": 41,
+        "employeeName": "TestEmployeeService007_updated",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TL",
+        "createdBy": 1,
+        "createdOn": "2023-02-16T00:00:00",
+        "departmentId": 24
+    }
+]); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+          'TestEmployeeService007_updated' Present in GetAll response
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:18 pm</td>
+        <td>
+          Employee id '41' Present in GetAll response
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:300</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="36"><span>I hit EmployeeService GetID </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:19 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit EmployeeService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit EmployeeService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="37"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:19 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:19 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:043</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="38"><span>I validate the response for EmployeeService GetID </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:19 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create([
+    {
+        "department": null,
+        "id": 41,
+        "employeeName": "TestEmployeeService007_updated",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TL",
+        "createdBy": 1,
+        "createdOn": "2023-02-16T00:00:00",
+        "departmentId": 24
+    }
+]); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:19 pm</td>
+        <td>
+          <b>Expected employeeName : </b><font color=green>[TestEmployeeService007_updated]</font>	<b>Actual employeeName : </b><font color=green>[TestEmployeeService007_updated]</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:19 pm</td>
+        <td>
+          <b>Expected Employee id : </b><font color=green>[41]</font>	<b>Actual Employee id : </b><font color=green>[41]</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="39"
+          author=""
+          tag="Create"
+          device="">
+          <div class="test-detail">
+            <p class="name">Create and Update UserService</p>
+            <p class="text-sm">
+              <span>3:22:19 pm</span> / <span>00:00:40:262</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Create and Update UserService</h5>
+<span class='badge badge-success'>08.16.2023 3:22:19 pm</span>
+<span class='badge badge-danger'>08.16.2023 3:22:59 pm</span>
+<span class='badge badge-default'>00:00:40:262</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Create</span></div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:847</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="40"><span>I hit UserService POST with name as www.TestAutotest0081.com</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({
+  "emailAddress": "www.TestAutotest0081.com",
+  "userSource": "extl",
+  "firstName": "R1",
+  "lastName": "R2",
+  "createdDate": "2023-02-16T07:39:24.702Z"
+}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="41"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:022</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="42"><span>I validate the response for UserService POST</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create({
+    "id": 45,
+    "emailAddress": "www.TestAutotest0081.com",
+    "userSource": "extl",
+    "firstName": "R1",
+    "lastName": "R2",
+    "createdDate": "2023-02-16T07:39:24.702Z"
+}); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          <b>Expected Scheme Name : </b><font color=green>www.TestAutotest0081.com</font>	<b>Actual Scheme Name : </b><font color=green>www.TestAutotest0081.com</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:297</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="43"><span>I hit UserService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit UserService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit UserService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="44"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:045</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="45"><span>I validate the response for UserService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create([
+    {
+        "id": 1,
+        "emailAddress": "stephen.kolangara@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Stephen",
+        "lastName": "John Kolangara",
+        "createdDate": "2023-03-03T00:00:00"
+    },
+    {
+        "id": 5,
+        "emailAddress": "bhanu.surya@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Bhanu",
+        "lastName": "Surya M",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 6,
+        "emailAddress": "rajath.gm@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Rajath",
+        "lastName": "GM",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 7,
+        "emailAddress": "surya.kalyanasundram@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Surya",
+        "lastName": "Kalyanasundram",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 8,
+        "emailAddress": "naincy.soni@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Naincy",
+        "lastName": "Soni",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 11,
+        "emailAddress": "sunilkumar.valasang@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Sunilkumar",
+        "lastName": "Valasang",
+        "createdDate": "2023-03-10T00:00:00"
+    },
+    {
+        "id": 13,
+        "emailAddress": "mahesh.lilly@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Mahesh Manoharan",
+        "lastName": "Lilly",
+        "createdDate": "2023-03-24T00:00:00"
+    },
+    {
+        "id": 17,
+        "emailAddress": "stevjohn.sj17@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Stephen",
+        "lastName": "John",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 18,
+        "emailAddress": "satheesh.kumar@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Satheesh",
+        "lastName": "Kumar",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 19,
+        "emailAddress": "singhsatyaray@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Satyaray",
+        "lastName": "Singh",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 20,
+        "emailAddress": "jitendrabais16@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Jitendra Singh",
+        "lastName": "Bais",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 21,
+        "emailAddress": "satish2676@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Satheesh",
+        "lastName": "Kumar",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 22,
+        "emailAddress": "satyaray.singh@global-csg.com",
+        "userSource": "INTERAL",
+        "firstName": "Satyaray Osiyar",
+        "lastName": "Singh",
+        "createdDate": "2023-06-26T00:00:00"
+    },
+    {
+        "id": 23,
+        "emailAddress": "jitendrapratap.singh@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Jitendrapratap Indrabahadur",
+        "lastName": "Singh",
+        "createdDate": "2023-04-07T00:00:00"
+    },
+    {
+        "id": 24,
+        "emailAddress": "toravihangargi@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Ravi",
+        "lastName": "Hangargi",
+        "createdDate": "2023-04-12T00:00:00"
+    },
+    {
+        "id": 25,
+        "emailAddress": "thirumaleswara.malapati@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Thirumaleswara Rao",
+        "lastName": "Malapati",
+        "createdDate": "2023-04-27T00:00:00"
+    },
+    {
+        "id": 26,
+        "emailAddress": "renuka.gaddam@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Renuka",
+        "lastName": "Gaddam",
+        "createdDate": "2023-05-23T00:00:00"
+    },
+    {
+        "id": 27,
+        "emailAddress": "ravi.hangargi@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Ravi Channappa",
+        "lastName": "Hangargi",
+        "createdDate": "2023-06-05T00:00:00"
+    },
+    {
+        "id": 29,
+        "emailAddress": "gowthama.ks@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Gowthama",
+        "lastName": "K S",
+        "createdDate": "2023-06-29T00:00:00"
+    },
+    {
+        "id": 30,
+        "emailAddress": "sagar.mallappa@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Sagar",
+        "lastName": "Mallappa",
+        "createdDate": "2023-07-03T00:00:00"
+    },
+    {
+        "id": 34,
+        "emailAddress": "eswara.bailapudi@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Eswara Rao",
+        "lastName": "Bailapudi",
+        "createdDate": "2023-08-01T00:00:00"
+    },
+    {
+        "id": 45,
+        "emailAddress": "www.TestAutotest0081.com",
+        "userSource": "extl",
+        "firstName": "R1",
+        "lastName": "R2",
+        "createdDate": "2023-02-16T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          User 'www.TestAutotest0081.com' Present in GetAll response
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          User id '45' Present in GetAll response
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:299</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="46"><span>I hit UserService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit UserService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit UserService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="47"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:029</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="48"><span>I validate the response for UserService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create([
+    {
+        "id": 45,
+        "emailAddress": "www.TestAutotest0081.com",
+        "userSource": "extl",
+        "firstName": "R1",
+        "lastName": "R2",
+        "createdDate": "2023-02-16T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          <b>Expected User Emailaddress  : </b><font color=green>[www.TestAutotest0081.com]</font>	<b>Actual User Emailaddress  : </b><font color=green>[www.TestAutotest0081.com]</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:20 pm</td>
+        <td>
+          <b>Expected User id : </b><font color=green>[45]</font>	<b>Actual User id : </b><font color=green>[45]</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:36:547</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="49"><span>I hit UserService PUT</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:57 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-20'></div>
+ <script>
+  function jsonTreeCreate20() { 
+   document.getElementById('code-block-json-20').innerHTML = JSONTree.create({
+  "id": 45,
+  "emailAddress": "www.TestAutotest0081_updated.com",
+  "userSource": "extl",
+  "firstName": "R3",
+  "lastName": "R5",
+  "createdDate": "2023-02-16T07:39:24.702Z"
+}); 
+  }
+  jsonTreeCreate20();
+ </script>
+
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="50"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:57 pm</td>
+        <td>
+          Status Code 500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:57 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=red>200</font>	<b>Actual Status Code : </b><font color=red>500</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:00:004</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="51"><span>I validate the response for UserService PUT</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:57 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-21'></div>
+ <script>
+  function jsonTreeCreate21() { 
+   document.getElementById('code-block-json-21').innerHTML = JSONTree.create(Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:2bf43770-0cac-4209-8ea1-a8172ce080de
+Error Number:-2,State:0,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ApiAntDbObjects.Shared.GenericRepository`1.UpdateAsync(TEntity entity) in C:\Users\suryakal\Desktop\DLL_Upload\ApiAntDLL_Sln\ApiAntDLL_Sln\ApiAntDbObjects\Shared\GenericRepository.cs:line 60
+   at WebApiAnt.Controllers.UserServiceController.UpdateUserAsync(User user) in C:\Users\suryakal\Desktop\DLL_Upload\ApiAntDLL_Sln\ApiAntDLL_Sln\ApiAntDbWeb\Controller\UserServiceController.cs:line 47
+   at lambda_method257(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+HEADERS
+=======
+Accept: */*
+Connection: keep-alive
+Host: localhost:64422
+User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 178
+); 
+  }
+  jsonTreeCreate21();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:57 pm</td>
+        <td>
+          <span class='badge white-text red'>Test Case is Failed : </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:57 pm</td>
+        <td>
+          <textarea readonly class="code-block">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at Creative.testcomponents.API.APIBaseClass.testStepHandle(APIBaseClass.java:209)
+	at Creative.stepdefinitions.DLL_upload.i_validate_the_response_for_userService_put(DLL_upload.java:840)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'M', no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at Creative.stepdefinitions.DLL_upload.i_validate_the_response_for_userService_put(DLL_upload.java:837)
+	... 33 more
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:57 pm</td>
+        <td>
+          <span class='badge white-text green'>Test Case is Passed : </span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:770</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="52"><span>I hit UserService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit UserService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit UserService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="53"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:00:033</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="54"><span>I validate the response for UserService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-22'></div>
+ <script>
+  function jsonTreeCreate22() { 
+   document.getElementById('code-block-json-22').innerHTML = JSONTree.create([
+    {
+        "id": 1,
+        "emailAddress": "stephen.kolangara@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Stephen",
+        "lastName": "John Kolangara",
+        "createdDate": "2023-03-03T00:00:00"
+    },
+    {
+        "id": 5,
+        "emailAddress": "bhanu.surya@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Bhanu",
+        "lastName": "Surya M",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 6,
+        "emailAddress": "rajath.gm@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Rajath",
+        "lastName": "GM",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 7,
+        "emailAddress": "surya.kalyanasundram@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Surya",
+        "lastName": "Kalyanasundram",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 8,
+        "emailAddress": "naincy.soni@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Naincy",
+        "lastName": "Soni",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 11,
+        "emailAddress": "sunilkumar.valasang@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Sunilkumar",
+        "lastName": "Valasang",
+        "createdDate": "2023-03-10T00:00:00"
+    },
+    {
+        "id": 13,
+        "emailAddress": "mahesh.lilly@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Mahesh Manoharan",
+        "lastName": "Lilly",
+        "createdDate": "2023-03-24T00:00:00"
+    },
+    {
+        "id": 17,
+        "emailAddress": "stevjohn.sj17@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Stephen",
+        "lastName": "John",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 18,
+        "emailAddress": "satheesh.kumar@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Satheesh",
+        "lastName": "Kumar",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 19,
+        "emailAddress": "singhsatyaray@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Satyaray",
+        "lastName": "Singh",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 20,
+        "emailAddress": "jitendrabais16@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Jitendra Singh",
+        "lastName": "Bais",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 21,
+        "emailAddress": "satish2676@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Satheesh",
+        "lastName": "Kumar",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 22,
+        "emailAddress": "satyaray.singh@global-csg.com",
+        "userSource": "INTERAL",
+        "firstName": "Satyaray Osiyar",
+        "lastName": "Singh",
+        "createdDate": "2023-06-26T00:00:00"
+    },
+    {
+        "id": 23,
+        "emailAddress": "jitendrapratap.singh@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Jitendrapratap Indrabahadur",
+        "lastName": "Singh",
+        "createdDate": "2023-04-07T00:00:00"
+    },
+    {
+        "id": 24,
+        "emailAddress": "toravihangargi@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Ravi",
+        "lastName": "Hangargi",
+        "createdDate": "2023-04-12T00:00:00"
+    },
+    {
+        "id": 25,
+        "emailAddress": "thirumaleswara.malapati@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Thirumaleswara Rao",
+        "lastName": "Malapati",
+        "createdDate": "2023-04-27T00:00:00"
+    },
+    {
+        "id": 26,
+        "emailAddress": "renuka.gaddam@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Renuka",
+        "lastName": "Gaddam",
+        "createdDate": "2023-05-23T00:00:00"
+    },
+    {
+        "id": 27,
+        "emailAddress": "ravi.hangargi@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Ravi Channappa",
+        "lastName": "Hangargi",
+        "createdDate": "2023-06-05T00:00:00"
+    },
+    {
+        "id": 29,
+        "emailAddress": "gowthama.ks@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Gowthama",
+        "lastName": "K S",
+        "createdDate": "2023-06-29T00:00:00"
+    },
+    {
+        "id": 30,
+        "emailAddress": "sagar.mallappa@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Sagar",
+        "lastName": "Mallappa",
+        "createdDate": "2023-07-03T00:00:00"
+    },
+    {
+        "id": 34,
+        "emailAddress": "eswara.bailapudi@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Eswara Rao",
+        "lastName": "Bailapudi",
+        "createdDate": "2023-08-01T00:00:00"
+    },
+    {
+        "id": 45,
+        "emailAddress": "www.TestAutotest0081.com",
+        "userSource": "extl",
+        "firstName": "R1",
+        "lastName": "R2",
+        "createdDate": "2023-02-16T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate22();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+          <b>Expected User Name : </b><font color=red>www.TestAutotest0081_updated.com</font>	<b>Actual User Name : </b><font color=red></font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:298</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="55"><span>I hit UserService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit UserService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit UserService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="56"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:00:016</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="57"><span>I validate the response for UserService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Create</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-23'></div>
+ <script>
+  function jsonTreeCreate23() { 
+   document.getElementById('code-block-json-23').innerHTML = JSONTree.create([
+    {
+        "id": 45,
+        "emailAddress": "www.TestAutotest0081.com",
+        "userSource": "extl",
+        "firstName": "R1",
+        "lastName": "R2",
+        "createdDate": "2023-02-16T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate23();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:22:59 pm</td>
+        <td>
+          <b>Expected User : </b><font color=red>www.TestAutotest0081_updated.com</font>	<b>Actual User : </b><font color=red>not found</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag="Delete"
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete EmployeeService</p>
+            <p class="text-sm">
+              <span>3:22:59 pm</span> / <span>00:00:01:727</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Delete EmployeeService</h5>
+<span class='badge badge-success'>08.16.2023 3:22:59 pm</span>
+<span class='badge badge-danger'>08.16.2023 3:23:01 pm</span>
+<span class='badge badge-default'>00:00:01:727</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Delete</span></div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:095</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="59"><span>I hit the EmployeeService Delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-24'></div>
+ <script>
+  function jsonTreeCreate24() { 
+   document.getElementById('code-block-json-24').innerHTML = JSONTree.create(true); 
+  }
+  jsonTreeCreate24();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>true</font>	<b>Actual Status : </b><font color=green>true</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="60"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:291</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="61"><span>I hit EmployeeService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit EmployeeService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit EmployeeService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="62"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:023</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="63"><span>I validate the response for EmployeeService GetALL after delete </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-25'></div>
+ <script>
+  function jsonTreeCreate25() { 
+   document.getElementById('code-block-json-25').innerHTML = JSONTree.create([
+    {
+        "department": null,
+        "id": 3,
+        "employeeName": "Stephen",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "Bombay",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00",
+        "departmentId": 4
+    },
+    {
+        "department": null,
+        "id": 39,
+        "employeeName": "Stephen",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TeamMember",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00",
+        "departmentId": 24
+    },
+    {
+        "department": null,
+        "id": 40,
+        "employeeName": "Stephen_updated",
+        "gender": "Male",
+        "city": "Mumbai",
+        "designation": "TeamMember",
+        "createdBy": 1,
+        "createdOn": "2023-02-15T00:00:00",
+        "departmentId": 24
+    }
+]); 
+  }
+  jsonTreeCreate25();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+          <b>Expected employeeName : </b><font color=green>TestEmployeeService007_updated</font>	<b>Actual employeeName : </b><font color=green></font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:00 pm</td>
+        <td>
+          employeeName 'TestEmployeeService007_updated' deleted succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:293</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="64"><span>I hit EmployeeService GetID </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:01 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit EmployeeService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit EmployeeService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="65"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:01 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:01 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:018</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="66"><span>I validate the response for EmployeeService GetID after delete </span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:01 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-26'></div>
+ <script>
+  function jsonTreeCreate26() { 
+   document.getElementById('code-block-json-26').innerHTML = JSONTree.create([
+    
+]); 
+  }
+  jsonTreeCreate26();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:01 pm</td>
+        <td>
+          <b>Expected employeeName : </b><font color=green>[]</font>	<b>Actual employeeName : </b><font color=green>[]</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:01 pm</td>
+        <td>
+          employeeName 'TestEmployeeService007_updated' deleted succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="67"
+          author=""
+          tag="Delete"
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete DepartmentService</p>
+            <p class="text-sm">
+              <span>3:23:01 pm</span> / <span>00:00:03:894</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Delete DepartmentService</h5>
+<span class='badge badge-success'>08.16.2023 3:23:01 pm</span>
+<span class='badge badge-danger'>08.16.2023 3:23:05 pm</span>
+<span class='badge badge-default'>00:00:03:894</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Delete</span></div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:095</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="68"><span>I hit the EmployeeService Delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:02 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-27'></div>
+ <script>
+  function jsonTreeCreate27() { 
+   document.getElementById('code-block-json-27').innerHTML = JSONTree.create(true); 
+  }
+  jsonTreeCreate27();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:02 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>true</font>	<b>Actual Status : </b><font color=green>true</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="69"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:02 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:02 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:077</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="70"><span>I hit the updated EmployeeService Delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:03 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-28'></div>
+ <script>
+  function jsonTreeCreate28() { 
+   document.getElementById('code-block-json-28').innerHTML = JSONTree.create(true); 
+  }
+  jsonTreeCreate28();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:03 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>true</font>	<b>Actual Status : </b><font color=green>true</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="71"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:03 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:03 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:090</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="72"><span>I hit the DepartmentService Delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-29'></div>
+ <script>
+  function jsonTreeCreate29() { 
+   document.getElementById('code-block-json-29').innerHTML = JSONTree.create(true); 
+  }
+  jsonTreeCreate29();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>true</font>	<b>Actual Status : </b><font color=green>true</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="73"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:287</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="74"><span>I hit DepartmentService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit DepartmentService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit DepartmentService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="75"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:014</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="76"><span>I validate the response for DepartmentService GetALL after delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-30'></div>
+ <script>
+  function jsonTreeCreate30() { 
+   document.getElementById('code-block-json-30').innerHTML = JSONTree.create([
+    {
+        "employee": null,
+        "id": 3,
+        "departmentName": "Purchase",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 4,
+        "departmentName": "Procurement",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 5,
+        "departmentName": "IT",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 7,
+        "departmentName": "Admin Department",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 9,
+        "departmentName": "AAA Department",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 11,
+        "departmentName": "QADept",
+        "createdBy": 1,
+        "createdOn": "2023-06-27T00:00:00"
+    },
+    {
+        "employee": null,
+        "id": 12,
+        "departmentName": "SSSDepartment",
+        "createdBy": 1,
+        "createdOn": "2020-03-10T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate30();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+          <b>Expected Department Name : </b><font color=green>Purchase</font>	<b>Actual Department Name : </b><font color=green></font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:04 pm</td>
+        <td>
+          Department Name 'Purchase' deleted succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:289</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="77"><span>I hit DepartmentService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:05 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit DepartmentService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit DepartmentService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="78"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:05 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:05 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:032</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="79"><span>I validate the response for DepartmentService GetID after delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:05 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-31'></div>
+ <script>
+  function jsonTreeCreate31() { 
+   document.getElementById('code-block-json-31').innerHTML = JSONTree.create([
+    
+]); 
+  }
+  jsonTreeCreate31();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:05 pm</td>
+        <td>
+          <b>Expected Department Name  : </b><font color=green>[]</font>	<b>Actual Department Name  : </b><font color=green>[]</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:05 pm</td>
+        <td>
+          Department Name 'Purchase' deleted succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="80"
+          author=""
+          tag="Delete"
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete UserService</p>
+            <p class="text-sm">
+              <span>3:23:05 pm</span> / <span>00:00:01:750</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Delete UserService</h5>
+<span class='badge badge-success'>08.16.2023 3:23:05 pm</span>
+<span class='badge badge-danger'>08.16.2023 3:23:07 pm</span>
+<span class='badge badge-default'>00:00:01:750</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Delete</span></div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:083</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="81"><span>I hit the UserService Delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-32'></div>
+ <script>
+  function jsonTreeCreate32() { 
+   document.getElementById('code-block-json-32').innerHTML = JSONTree.create(true); 
+  }
+  jsonTreeCreate32();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>true</font>	<b>Actual Status : </b><font color=green>true</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="82"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:313</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="83"><span>I hit UserService GetALL</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit UserService GetALL successfully</font>	<b>Actual Status : </b><font color=green>I hit UserService GetALL successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="84"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:038</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="85"><span>I validate the response for UserService GetALL after delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-33'></div>
+ <script>
+  function jsonTreeCreate33() { 
+   document.getElementById('code-block-json-33').innerHTML = JSONTree.create([
+    {
+        "id": 1,
+        "emailAddress": "stephen.kolangara@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Stephen",
+        "lastName": "John Kolangara",
+        "createdDate": "2023-03-03T00:00:00"
+    },
+    {
+        "id": 5,
+        "emailAddress": "bhanu.surya@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Bhanu",
+        "lastName": "Surya M",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 6,
+        "emailAddress": "rajath.gm@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Rajath",
+        "lastName": "GM",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 7,
+        "emailAddress": "surya.kalyanasundram@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Surya",
+        "lastName": "Kalyanasundram",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 8,
+        "emailAddress": "naincy.soni@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Naincy",
+        "lastName": "Soni",
+        "createdDate": "2023-03-06T00:00:00"
+    },
+    {
+        "id": 11,
+        "emailAddress": "sunilkumar.valasang@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Sunilkumar",
+        "lastName": "Valasang",
+        "createdDate": "2023-03-10T00:00:00"
+    },
+    {
+        "id": 13,
+        "emailAddress": "mahesh.lilly@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Mahesh Manoharan",
+        "lastName": "Lilly",
+        "createdDate": "2023-03-24T00:00:00"
+    },
+    {
+        "id": 17,
+        "emailAddress": "stevjohn.sj17@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Stephen",
+        "lastName": "John",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 18,
+        "emailAddress": "satheesh.kumar@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Satheesh",
+        "lastName": "Kumar",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 19,
+        "emailAddress": "singhsatyaray@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Satyaray",
+        "lastName": "Singh",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 20,
+        "emailAddress": "jitendrabais16@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Jitendra Singh",
+        "lastName": "Bais",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 21,
+        "emailAddress": "satish2676@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Satheesh",
+        "lastName": "Kumar",
+        "createdDate": "2023-03-28T00:00:00"
+    },
+    {
+        "id": 22,
+        "emailAddress": "satyaray.singh@global-csg.com",
+        "userSource": "INTERAL",
+        "firstName": "Satyaray Osiyar",
+        "lastName": "Singh",
+        "createdDate": "2023-06-26T00:00:00"
+    },
+    {
+        "id": 23,
+        "emailAddress": "jitendrapratap.singh@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Jitendrapratap Indrabahadur",
+        "lastName": "Singh",
+        "createdDate": "2023-04-07T00:00:00"
+    },
+    {
+        "id": 24,
+        "emailAddress": "toravihangargi@gmail.com",
+        "userSource": "EXTL",
+        "firstName": "Ravi",
+        "lastName": "Hangargi",
+        "createdDate": "2023-04-12T00:00:00"
+    },
+    {
+        "id": 25,
+        "emailAddress": "thirumaleswara.malapati@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Thirumaleswara Rao",
+        "lastName": "Malapati",
+        "createdDate": "2023-04-27T00:00:00"
+    },
+    {
+        "id": 26,
+        "emailAddress": "renuka.gaddam@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Renuka",
+        "lastName": "Gaddam",
+        "createdDate": "2023-05-23T00:00:00"
+    },
+    {
+        "id": 27,
+        "emailAddress": "ravi.hangargi@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Ravi Channappa",
+        "lastName": "Hangargi",
+        "createdDate": "2023-06-05T00:00:00"
+    },
+    {
+        "id": 29,
+        "emailAddress": "gowthama.ks@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Gowthama",
+        "lastName": "K S",
+        "createdDate": "2023-06-29T00:00:00"
+    },
+    {
+        "id": 30,
+        "emailAddress": "sagar.mallappa@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Sagar",
+        "lastName": "Mallappa",
+        "createdDate": "2023-07-03T00:00:00"
+    },
+    {
+        "id": 34,
+        "emailAddress": "eswara.bailapudi@global-csg.com",
+        "userSource": "EXTL",
+        "firstName": "Eswara Rao",
+        "lastName": "Bailapudi",
+        "createdDate": "2023-08-01T00:00:00"
+    }
+]); 
+  }
+  jsonTreeCreate33();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          <b>Expected User Emailaddress : </b><font color=green>www.TestAutotest0081_updated.com</font>	<b>Actual User Emailaddress : </b><font color=green></font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          User Emailaddress 'www.TestAutotest0081_updated.com' deleted succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:287</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="86"><span>I hit UserService GetID</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          <b>Expected Status : </b><font color=green>I hit UserService GetID successfully</font>	<b>Actual Status : </b><font color=green>I hit UserService GetID successfully</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="87"><span>I verify the status code as 200</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          Status Code 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+          <b>Expected Status Code : </b><font color=green>200</font>	<b>Actual Status Code : </b><font color=green>200</font>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:016</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="88"><span>I validate the response for UserService GetID after delete</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Delete</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:23:06 pm</td>
+        <td>
+           <div class='json-tree' id='code-block-json-34'></div>
+ <script>
+  function jsonTreeCreate34() { 
+   document.getElementById('code-block-json-34').innerHTML = JSONTree.create([
+    
+]); 
+  }
+  jsonTreeCreate34();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:07 pm</td>
+        <td>
+          <b>Expected User Emailaddress : </b><font color=green>[]</font>	<b>Actual User Emailaddress : </b><font color=green>[]</font>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:23:07 pm</td>
+        <td>
+          User Emailaddress 'www.TestAutotest0081_updated.com' deleted succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">io.restassured.path.json.exception.JsonPathException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>io.restassured.path.json.exception.JsonPathException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:22:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='39' id='51'>I validate the response for UserService PUT</a>
+<div class="">
+<span class="badge badge-default">Create and Update UserService.I validate the response for UserService PUT</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Create</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Create</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:21:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Create and Update DepartmentService</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>Create and Update EmployeeService</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:22:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='39' id='39'>Create and Update UserService</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">Delete</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Delete</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:22:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='58' id='58'>Delete EmployeeService</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:23:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='67'>Delete DepartmentService</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:23:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='80' id='80'>Delete UserService</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 16, 2023 03:21:57 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 16, 2023 03:23:07 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='83%'>
+<b>5</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='16%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>78</b> steps passed</small></div>
+<div>
+<small data-tooltip='4%'><b>4</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'><b>122</b> events passed</small></div>
+<div>
+<small data-tooltip='3%'><b>5</b> events failed,
+<b data-tooltip='%'>35</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create and Update DepartmentService":17.572,"Create and Update EmployeeService":3.132,"Create and Update UserService":40.262,"Delete EmployeeService":1.727,"Delete DepartmentService":3.894,"Delete UserService":1.75
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Create</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
+<tr>
+<td>Delete</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Application</td>
+<td>Demo Webshop Application</td>
+</tr>
+<tr>
+<td>Environment URL</td>
+<td>https://demowebshop.tricentis.com/</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>Windows 10</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>suryakal</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 78,
+failChild: 4,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 122,
+failEvents: 5,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 35
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

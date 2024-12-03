@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cucumber Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="DemoWebShop.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Cucumber Tests(failed)">
+    <parameter name="browser" value="chrome,firefox"/>
+    <classes>
+      <class name="DemoWebShop.TestRunners.DWS_UI_Runner_INT001">
+        <methods>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="beforeCalss"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.TestRunners.DWS_UI_Runner_INT001 -->
+    </classes>
+  </test> <!-- Cucumber Tests(failed) -->
+</suite> <!-- Failed suite [Cucumber Suite] -->

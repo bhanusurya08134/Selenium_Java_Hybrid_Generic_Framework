@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>TestNG:  RegressionTest03</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RegressionTest03</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 09 16:58:21 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>125 seconds (125234 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_6.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_6<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_06 Validate email message", "Demo Webshop application"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at DemoWebShop.stepDefinitions.UI.Hooks.teardown(Hooks.java:51)
+... Removed 1 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1763852285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1763852285'><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at DemoWebShop.stepDefinitions.UI.Hooks.teardown(Hooks.java:51)
+</pre></div></td>
+<td>86</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_6@e25951c</td></tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_3.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_3<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_03 Order Computer", "Demo Webshop application"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at DemoWebShop.stepDefinitions.UI.Hooks.teardown(Hooks.java:51)
+... Removed 1 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1982277274", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1982277274'><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at DemoWebShop.stepDefinitions.UI.Hooks.teardown(Hooks.java:51)
+</pre></div></td>
+<td>89</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_3@6f8e8894</td></tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_10.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_10<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_10 Sort Products by Price", "Demo Webshop application"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Products Price arranged SuccessFully to Low to High] but found [Products Price NOT arranged SuccessFully to Low to High],
+	expected [Products Price SuccessFully arranged to High to Low] but found [Products Price NOT SuccessFully arranged  to High to Low]
+	at DemoWebShop.stepDefinitions.UI.Hooks.teardown(Hooks.java:51)
+... Removed 1 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace857183459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace857183459'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Products Price arranged SuccessFully to Low to High] but found [Products Price NOT arranged SuccessFully to Low to High],
+	expected [Products Price SuccessFully arranged to High to Low] but found [Products Price NOT SuccessFully arranged  to High to Low]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at DemoWebShop.stepDefinitions.UI.Hooks.teardown(Hooks.java:51)
+</pre></div></td>
+<td>84</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_10@2f666ebb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_1.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_01 Validate community pool", "Demo Webshop application"</td>
+<td></td>
+<td>49</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_1@452e19ca</td></tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_5.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_5<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_05 Search Computing and internet", "Demo Webshop application"</td>
+<td></td>
+<td>63</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_5@928763c</td></tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_4.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_4<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_04 Validate customer details", "Demo Webshop application"</td>
+<td></td>
+<td>70</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_4@3cfdd820</td></tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_8.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_8<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_08 View and Edit User Profile", "Demo Webshop application"</td>
+<td></td>
+<td>67</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_8@471a9022</td></tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_9.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_9<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_09 Remove Product from Cart", "Demo Webshop application"</td>
+<td></td>
+<td>73</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_9@dc9876b</td></tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_2.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_02 Order text book", "Demo Webshop application"</td>
+<td></td>
+<td>90</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_2@6b0d80ed</td></tr>
+<tr>
+<td title='DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_7.runScenario()'><b>runScenario</b><br>Test class: DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_7<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DWS_07 Perform a Product Review", "Demo Webshop application"</td>
+<td></td>
+<td>118</td>
+<td>DemoWebShop.TestRunners.Cross_Browser_Parallel_Property_Runner_01_7@15f47664</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [DWS Regression Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="DemoWebShop.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="3" parallel="methods" name="Cucumber Tests - Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="DemoWebShop.TestRunners.Cross_Browser_Sequantial_Execution_">
+        <methods>
+          <include name="runScenario" invocation-numbers="4"/>
+          <include name="beforeCalss"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.TestRunners.Cross_Browser_Sequantial_Execution_ -->
+    </classes>
+  </test> <!-- Cucumber Tests - Edge(failed) -->
+  <test thread-count="3" parallel="methods" name="Cucumber Tests - Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="DemoWebShop.TestRunners.Cross_Browser_Sequantial_Execution_">
+        <methods>
+          <include name="runScenario" invocation-numbers="4"/>
+          <include name="beforeCalss"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.TestRunners.Cross_Browser_Sequantial_Execution_ -->
+    </classes>
+  </test> <!-- Cucumber Tests - Chrome(failed) -->
+  <test thread-count="3" parallel="methods" name="Cucumber Tests - Fire fox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="DemoWebShop.TestRunners.Cross_Browser_Sequantial_Execution_">
+        <methods>
+          <include name="runScenario" invocation-numbers="4"/>
+          <include name="beforeCalss"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- DemoWebShop.TestRunners.Cross_Browser_Sequantial_Execution_ -->
+    </classes>
+  </test> <!-- Cucumber Tests - Fire fox(failed) -->
+</suite> <!-- Failed suite [DWS Regression Suite] -->
